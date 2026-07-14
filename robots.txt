@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marrahmalie4-netizen.github.io/Reliable-Travel-Agent-SL-Limited/sitemap.xml

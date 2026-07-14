@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Reliable Travel Agent Sierra Leone Limited | RTASL</title>
+<meta name="description" content="RTASL - Reliable Travel Agent Sierra Leone Limited. Leading travel agency in Freetown offering visa consultancy, flight bookings, and travel management services across West Africa."/>
+<meta name="keywords" content="travel agency Sierra Leone, RTASL, visa consultancy Freetown, flight booking Sierra Leone, travel management Freetown"/>
+<meta name="author" content="Reliable Travel Agent Sierra Leone Limited"/>
+
+<!-- Favicon / Logo -->
+<link rel="icon" type="image/png" href="logo.png"/>
+<link rel="apple-touch-icon" href="logo.png"/>
+
+<!-- Open Graph (Facebook, WhatsApp link previews) -->
+<meta property="og:title" content="Reliable Travel Agent Sierra Leone Limited | RTASL"/>
+<meta property="og:description" content="Leading travel agency across West Africa — visa consultancy, travel management, and transformative tourism."/>
+<meta property="og:image" content="logo.png"/>
+<meta property="og:url" content="https://marrahmalie4-netizen.github.io/"/>
+<meta property="og:type" content="website"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Reliable Travel Agent Sierra Leone Limited | RTASL"/>
+<meta name="twitter:description" content="Leading travel agency across West Africa — visa consultancy, travel management, and transformative tourism."/>
+<meta name="twitter:image" content="logo.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Raleway:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --gold-dark: #9A7A32;
+  --navy: #0D1B2A;
+  --navy-mid: #172840;
+  --navy-light: #1E3555;
+  --sky: #5BAFD6;
+  --sky-light: #A8D4EC;
+  --white: #F9F7F2;
+  --off-white: #EDE9E0;
+  --text-dark: #1A1A2E;
+  --text-mid: #4A4A6A;
+  --text-light: #8A8AAA;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Raleway', sans-serif;
+  --font-accent: 'Cormorant Garamond', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  padding: 18px 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: all 0.4s ease;
+}
+nav.scrolled {
+  background: rgba(13,27,42,0.97);
+  backdrop-filter: blur(20px);
+  padding: 12px 60px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+.nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.nav-logo img { height: 52px; filter: drop-shadow(0 2px 8px rgba(201,168,76,0.4)); }
+.nav-logo-text { line-height: 1.1; }
+.nav-logo-text .name { font-family: var(--font-display); color: var(--white); font-size: 15px; font-weight: 700; letter-spacing: 0.5px; }
+.nav-logo-text .tag { font-family: var(--font-body); color: var(--gold); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; }
+.nav-links { display: flex; gap: 36px; list-style: none; }
+.nav-links a {
+  color: rgba(249,247,242,0.85); text-decoration: none;
+  font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+  position: relative; transition: color 0.3s;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 1px; background: var(--gold);
+  transition: width 0.3s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--navy) !important; padding: 10px 24px; border-radius: 2px;
+  font-weight: 700 !important;
+}
+.nav-cta::after { display: none !important; }
+.nav-cta:hover { background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important; color: var(--navy) !important; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger span { width: 26px; height: 2px; background: var(--white); transition: all 0.3s; }
+
+/* ── HERO ── */
+#hero {
+  height: 100vh; min-height: 700px;
+  position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    linear-gradient(180deg, rgba(13,27,42,0.75) 0%, rgba(13,27,42,0.35) 50%, rgba(13,27,42,0.8) 100%),
+    url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=85') center/cover no-repeat;
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+.hero-overlay {
+  position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(13,27,42,0.5) 100%);
+}
+.hero-content {
+  position: relative; z-index: 2;
+  text-align: center; padding: 0 20px;
+  max-width: 900px;
+}
+.hero-badge {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold); font-size: 11px; letter-spacing: 5px; text-transform: uppercase;
+  padding: 7px 22px; margin-bottom: 28px; font-weight: 600;
+  animation: fadeDown 0.8s ease both;
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 7vw, 90px);
+  font-weight: 900; color: var(--white);
+  line-height: 1.05; margin-bottom: 10px;
+  animation: fadeDown 0.9s 0.15s ease both;
+}
+.hero-title span { color: var(--gold); font-style: italic; }
+.hero-sub {
+  font-family: var(--font-accent);
+  font-size: clamp(18px, 2.5vw, 28px);
+  color: var(--sky-light); font-style: italic;
+  margin-bottom: 20px;
+  animation: fadeDown 1s 0.25s ease both;
+}
+.hero-desc {
+  font-size: 15px; color: rgba(249,247,242,0.8);
+  max-width: 620px; margin: 0 auto 44px;
+  line-height: 1.8; font-weight: 400;
+  animation: fadeDown 1s 0.35s ease both;
+}
+.hero-btns {
+  display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;
+  animation: fadeDown 1s 0.45s ease both;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--navy); padding: 16px 42px;
+  font-family: var(--font-body); font-weight: 700;
+  font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+  border: none; cursor: pointer; text-decoration: none;
+  border-radius: 2px; transition: all 0.3s;
+  box-shadow: 0 8px 30px rgba(201,168,76,0.35);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(201,168,76,0.5); }
+.btn-outline {
+  background: transparent;
+  color: var(--white); padding: 16px 42px;
+  font-family: var(--font-body); font-weight: 600;
+  font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+  border: 1px solid rgba(249,247,242,0.5); cursor: pointer; text-decoration: none;
+  border-radius: 2px; transition: all 0.3s;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-3px); }
+
+.hero-stats {
+  position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+  display: flex; justify-content: center;
+  background: linear-gradient(90deg, rgba(13,27,42,0.9), rgba(23,40,64,0.95), rgba(13,27,42,0.9));
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(201,168,76,0.2);
+}
+.hero-stat {
+  flex: 1; max-width: 220px;
+  padding: 22px 30px; text-align: center;
+  border-right: 1px solid rgba(201,168,76,0.15);
+}
+.hero-stat:last-child { border-right: none; }
+.hero-stat .num {
+  font-family: var(--font-display); font-size: 32px; font-weight: 700;
+  color: var(--gold); display: block;
+}
+.hero-stat .label {
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(249,247,242,0.6); font-weight: 500;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── SEARCH BAR ── */
+.search-section {
+  background: var(--navy);
+  padding: 50px 60px;
+  position: relative;
+}
+.search-section::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.search-title {
+  text-align: center; margin-bottom: 30px;
+  font-family: var(--font-display); font-size: 26px; color: var(--white);
+  font-weight: 600;
+}
+.search-title span { color: var(--gold); }
+.search-bar {
+  display: flex; gap: 0; max-width: 1000px; margin: 0 auto;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 4px; overflow: hidden;
+}
+.search-field {
+  flex: 1; display: flex; align-items: center; gap: 12px;
+  padding: 18px 24px; border-right: 1px solid rgba(201,168,76,0.2);
+  cursor: pointer; transition: background 0.3s;
+}
+.search-field:hover { background: rgba(201,168,76,0.08); }
+.search-field i { color: var(--gold); font-size: 16px; }
+.search-field-inner label {
+  display: block; font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); font-weight: 600; margin-bottom: 4px;
+}
+.search-field-inner input, .search-field-inner select {
+  background: transparent; border: none; outline: none;
+  color: var(--white); font-family: var(--font-body); font-size: 14px;
+  width: 100%; font-weight: 500;
+}
+.search-field-inner select option { background: var(--navy); }
+.search-btn {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--navy); padding: 0 40px;
+  border: none; cursor: pointer;
+  font-family: var(--font-body); font-weight: 700;
+  font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+  transition: all 0.3s;
+}
+.search-btn:hover { background: linear-gradient(135deg, var(--gold-light), var(--gold)); }
+
+/* ── SECTION COMMON ── */
+section { padding: 100px 60px; }
+.section-label {
+  font-size: 11px; letter-spacing: 5px; text-transform: uppercase;
+  color: var(--gold); font-weight: 700; margin-bottom: 14px;
+  display: flex; align-items: center; gap: 14px;
+}
+.section-label::before {
+  content: ''; display: block; width: 40px; height: 1px; background: var(--gold);
+}
+.section-title {
+  font-family: var(--font-display); font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700; line-height: 1.15;
+  color: var(--navy);
+}
+.section-title.light { color: var(--white); }
+.section-desc {
+  font-size: 16px; color: var(--text-mid);
+  max-width: 600px; line-height: 1.9; margin-top: 16px;
+}
+.section-desc.light { color: rgba(249,247,242,0.7); }
+.text-gold { color: var(--gold); }
+.text-italic { font-style: italic; font-family: var(--font-accent); }
+
+/* ── ABOUT ── */
+#about {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+  align-items: center; background: var(--white);
+}
+.about-images {
+  position: relative; height: 540px;
+}
+.about-img-main {
+  position: absolute; top: 0; left: 0;
+  width: 78%; height: 85%; object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+.about-img-accent {
+  position: absolute; bottom: 0; right: 0;
+  width: 50%; height: 55%; object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  border: 5px solid var(--white);
+}
+.about-badge {
+  position: absolute; bottom: 50px; left: -20px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--navy); padding: 20px 28px; border-radius: 3px;
+  text-align: center; box-shadow: 0 12px 40px rgba(201,168,76,0.4);
+  z-index: 5;
+}
+.about-badge .big { font-family: var(--font-display); font-size: 36px; font-weight: 900; display: block; line-height: 1; }
+.about-badge .small { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+.about-points { margin-top: 32px; display: flex; flex-direction: column; gap: 18px; }
+.about-point { display: flex; gap: 16px; align-items: flex-start; }
+.about-point-icon {
+  width: 44px; height: 44px; min-width: 44px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05));
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 2px; display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: 16px;
+}
+.about-point-text h4 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.about-point-text p { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+
+/* ── SERVICES ── */
+#services { background: var(--navy); }
+.services-header { text-align: center; max-width: 700px; margin: 0 auto 60px; }
+.services-header .section-label { justify-content: center; }
+.services-header .section-label::before { display: none; }
+.services-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px; max-width: 1400px; margin: 0 auto;
+}
+.service-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 4px; overflow: hidden;
+  transition: all 0.4s ease; cursor: pointer;
+  position: relative;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(201,168,76,0.5);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.service-card-img { height: 200px; overflow: hidden; position: relative; }
+.service-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.service-card:hover .service-card-img img { transform: scale(1.08); }
+.service-card-img-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(13,27,42,0.7) 0%, transparent 60%);
+}
+.service-icon {
+  position: absolute; top: 16px; right: 16px;
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  border-radius: 2px; display: flex; align-items: center; justify-content: center;
+  color: var(--navy); font-size: 18px;
+}
+.service-card-body { padding: 24px; }
+.service-card-body h3 {
+  font-family: var(--font-display); font-size: 20px; font-weight: 700;
+  color: var(--white); margin-bottom: 10px;
+}
+.service-card-body p { font-size: 13px; color: rgba(249,247,242,0.6); line-height: 1.7; }
+.service-tag {
+  display: inline-block; margin-top: 14px;
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); font-weight: 700;
+  border-bottom: 1px solid var(--gold); padding-bottom: 2px;
+}
+
+/* ── DESTINATIONS ── */
+#destinations { background: var(--off-white); }
+.dest-header { margin-bottom: 50px; }
+.destinations-tabs {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 40px;
+}
+.dest-tab {
+  padding: 9px 22px; border: 1px solid rgba(13,27,42,0.2);
+  background: transparent; cursor: pointer;
+  font-family: var(--font-body); font-size: 12px;
+  letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;
+  color: var(--text-mid); border-radius: 2px; transition: all 0.3s;
+}
+.dest-tab.active, .dest-tab:hover {
+  background: var(--navy); color: var(--gold); border-color: var(--navy);
+}
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+.dest-card {
+  position: relative; overflow: hidden; border-radius: 3px;
+  cursor: pointer; aspect-ratio: 3/4;
+}
+.dest-card.featured { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; }
+.dest-card img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.dest-card:hover img { transform: scale(1.08); }
+.dest-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(13,27,42,0.85) 0%, rgba(13,27,42,0.2) 50%, transparent 80%);
+  transition: all 0.4s;
+}
+.dest-card:hover .dest-overlay { background: linear-gradient(0deg, rgba(13,27,42,0.9) 0%, rgba(13,27,42,0.4) 60%, rgba(13,27,42,0.1) 100%); }
+.dest-info {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 24px; transition: all 0.4s;
+}
+.dest-info h3 {
+  font-family: var(--font-display); color: var(--white);
+  font-size: clamp(16px, 2vw, 22px); font-weight: 700; margin-bottom: 4px;
+}
+.dest-info .country { font-size: 12px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 10px; }
+.dest-info .details { font-size: 12px; color: rgba(249,247,242,0.7); opacity: 0; transform: translateY(10px); transition: all 0.4s 0.1s; }
+.dest-card:hover .dest-info .details { opacity: 1; transform: translateY(0); }
+.dest-badge {
+  position: absolute; top: 16px; left: 16px;
+  background: var(--gold); color: var(--navy);
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 5px 12px; font-weight: 700; border-radius: 2px;
+}
+
+/* ── VISA SECTION ── */
+#visa {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, var(--navy) 100%);
+  position: relative; overflow: hidden;
+}
+#visa::before {
+  content: ''; position: absolute; top: -100px; right: -100px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(91,175,214,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.visa-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.visa-cards { display: flex; flex-direction: column; gap: 16px; }
+.visa-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px; padding: 24px 28px;
+  display: flex; align-items: center; gap: 20px;
+  transition: all 0.3s; cursor: pointer;
+}
+.visa-card:hover { background: rgba(201,168,76,0.08); border-color: rgba(201,168,76,0.5); transform: translateX(6px); }
+.visa-card-icon {
+  width: 52px; height: 52px; min-width: 52px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  border-radius: 3px; display: flex; align-items: center; justify-content: center;
+  color: var(--navy); font-size: 20px;
+}
+.visa-card-text h4 { font-family: var(--font-display); font-size: 17px; color: var(--white); font-weight: 700; margin-bottom: 4px; }
+.visa-card-text p { font-size: 12px; color: rgba(249,247,242,0.6); line-height: 1.5; }
+.visa-card-arrow { margin-left: auto; color: var(--gold); font-size: 14px; opacity: 0; transition: opacity 0.3s, transform 0.3s; }
+.visa-card:hover .visa-card-arrow { opacity: 1; transform: translateX(4px); }
+
+/* ── WHY US ── */
+#why { background: var(--white); }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 60px; }
+.why-card { text-align: center; padding: 40px 28px; border: 1px solid rgba(13,27,42,0.08); border-radius: 3px; transition: all 0.4s; }
+.why-card:hover { background: var(--navy); transform: translateY(-8px); box-shadow: 0 20px 60px rgba(13,27,42,0.15); }
+.why-card:hover .why-title, .why-card:hover .why-desc { color: var(--white); }
+.why-icon {
+  width: 70px; height: 70px; margin: 0 auto 22px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05));
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 3px; display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: 26px; transition: all 0.4s;
+}
+.why-card:hover .why-icon { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--navy); }
+.why-title { font-family: var(--font-display); font-size: 19px; font-weight: 700; color: var(--navy); margin-bottom: 12px; transition: color 0.4s; }
+.why-desc { font-size: 13px; color: var(--text-mid); line-height: 1.7; transition: color 0.4s; }
+
+/* ── TESTIMONIALS ── */
+#testimonials { background: var(--navy); overflow: hidden; position: relative; }
+#testimonials::after {
+  content: '"'; position: absolute; top: -30px; right: 60px;
+  font-family: var(--font-display); font-size: 300px; color: rgba(201,168,76,0.04);
+  line-height: 1; pointer-events: none;
+}
+.testi-track {
+  display: flex; gap: 28px; margin-top: 50px;
+  overflow: hidden;
+}
+.testi-carousel { display: flex; gap: 28px; }
+.testi-card {
+  min-width: 380px; background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(201,168,76,0.15); border-radius: 4px;
+  padding: 36px; flex-shrink: 0;
+}
+.testi-stars { color: var(--gold); font-size: 14px; letter-spacing: 3px; margin-bottom: 18px; }
+.testi-text { font-family: var(--font-accent); font-style: italic; font-size: 16px; color: rgba(249,247,242,0.85); line-height: 1.8; margin-bottom: 24px; }
+.testi-author { display: flex; align-items: center; gap: 14px; }
+.testi-avatar { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); }
+.testi-author-info h5 { color: var(--white); font-size: 14px; font-weight: 700; }
+.testi-author-info span { color: var(--gold); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.testi-nav { display: flex; gap: 12px; margin-top: 36px; }
+.testi-btn {
+  width: 44px; height: 44px; border: 1px solid rgba(201,168,76,0.4);
+  background: transparent; border-radius: 2px;
+  color: var(--gold); font-size: 16px; cursor: pointer; transition: all 0.3s;
+  display: flex; align-items: center; justify-content: center;
+}
+.testi-btn:hover { background: var(--gold); color: var(--navy); }
+
+/* ── MISSION VISION ── */
+#mission { background: var(--off-white); }
+.mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; }
+.mv-card {
+  background: var(--white); border-radius: 4px; overflow: hidden;
+  box-shadow: 0 8px 40px rgba(13,27,42,0.08); position: relative;
+}
+.mv-card-top { height: 6px; background: linear-gradient(90deg, var(--gold), var(--gold-dark)); }
+.mv-card-body { padding: 44px; }
+.mv-card-icon { font-size: 40px; color: var(--gold); margin-bottom: 22px; }
+.mv-card h3 { font-family: var(--font-display); font-size: 28px; color: var(--navy); margin-bottom: 16px; font-weight: 700; }
+.mv-card p { font-size: 15px; color: var(--text-mid); line-height: 1.9; }
+
+/* ── CONTACT ── */
+#contact { background: var(--navy); padding-bottom: 0; }
+.contact-wrapper { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; padding-bottom: 80px; }
+.contact-info h2 { font-family: var(--font-display); font-size: 40px; color: var(--white); font-weight: 700; line-height: 1.2; margin-bottom: 20px; }
+.contact-info p { font-size: 15px; color: rgba(249,247,242,0.65); line-height: 1.9; margin-bottom: 36px; }
+.contact-details { display: flex; flex-direction: column; gap: 20px; }
+.contact-item { display: flex; gap: 16px; align-items: flex-start; }
+.contact-item-icon {
+  width: 44px; height: 44px; min-width: 44px;
+  background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 2px; display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: 16px;
+}
+.contact-item-text h5 { color: var(--white); font-size: 13px; font-weight: 700; margin-bottom: 3px; }
+.contact-item-text a, .contact-item-text p { color: rgba(249,247,242,0.65); font-size: 14px; text-decoration: none; transition: color 0.3s; }
+.contact-item-text a:hover { color: var(--gold); }
+.contact-form { background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.15); border-radius: 4px; padding: 44px; }
+.contact-form h3 { font-family: var(--font-display); font-size: 24px; color: var(--white); margin-bottom: 6px; }
+.contact-form .sub { font-size: 13px; color: rgba(249,247,242,0.5); margin-bottom: 30px; letter-spacing: 0.5px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.form-group { margin-bottom: 18px; }
+.form-group label { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 8px; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(201,168,76,0.2); border-radius: 2px;
+  padding: 13px 18px; color: var(--white);
+  font-family: var(--font-body); font-size: 14px; outline: none;
+  transition: border-color 0.3s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+.form-group select option { background: var(--navy-mid); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-note { font-size: 11px; color: rgba(249,247,242,0.4); margin-bottom: 22px; }
+.form-note i { color: var(--gold); margin-right: 5px; }
+.whatsapp-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white; border: none; padding: 16px;
+  font-family: var(--font-body); font-weight: 700;
+  font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase;
+  cursor: pointer; border-radius: 2px; transition: all 0.3s;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+}
+.whatsapp-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(37,211,102,0.3); }
+.wa-float {
+  position: fixed; bottom: 30px; right: 30px; z-index: 999;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 26px; text-decoration: none;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+  transition: all 0.3s; animation: pulse 2.5s ease-in-out infinite;
+}
+.wa-float:hover { transform: scale(1.12); box-shadow: 0 10px 36px rgba(37,211,102,0.65); }
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.5); }
+  50% { box-shadow: 0 6px 40px rgba(37,211,102,0.8); }
+}
+
+/* ── FOOTER ── */
+footer {
+  background: linear-gradient(180deg, var(--navy-mid) 0%, #0a1520 100%);
+  padding: 70px 60px 30px;
+  border-top: 1px solid rgba(201,168,76,0.15);
+}
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 60px; margin-bottom: 60px; }
+.footer-brand .nav-logo { margin-bottom: 18px; }
+.footer-brand p { font-size: 13px; color: rgba(249,247,242,0.55); line-height: 1.8; max-width: 280px; }
+.footer-social { display: flex; gap: 10px; margin-top: 20px; }
+.footer-social a {
+  width: 38px; height: 38px; border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 2px; display: flex; align-items: center; justify-content: center;
+  color: rgba(249,247,242,0.6); font-size: 14px; text-decoration: none; transition: all 0.3s;
+}
+.footer-social a:hover { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+.footer-col h4 { font-family: var(--font-display); font-size: 16px; color: var(--white); font-weight: 700; margin-bottom: 20px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col ul a { color: rgba(249,247,242,0.55); font-size: 13px; text-decoration: none; transition: color 0.3s; }
+.footer-col ul a:hover { color: var(--gold); }
+.footer-newsletter p { font-size: 13px; color: rgba(249,247,242,0.55); margin-bottom: 16px; line-height: 1.6; }
+.newsletter-input { display: flex; gap: 0; }
+.newsletter-input input {
+  flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.2);
+  border-right: none; padding: 12px 16px; color: var(--white);
+  font-family: var(--font-body); font-size: 13px; outline: none; border-radius: 2px 0 0 2px;
+}
+.newsletter-input button {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--navy); border: none; padding: 12px 18px;
+  cursor: pointer; font-weight: 700; font-size: 12px; border-radius: 0 2px 2px 0; transition: all 0.3s;
+}
+.newsletter-input button:hover { background: var(--gold-light); }
+.footer-bottom {
+  border-top: 1px solid rgba(249,247,242,0.08);
+  padding-top: 28px; display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 16px;
+}
+.footer-bottom p { font-size: 12px; color: rgba(249,247,242,0.4); }
+.footer-bottom a { color: var(--gold); text-decoration: none; }
+
+/* ── MOBILE ── */
+@media (max-width: 1100px) {
+  nav { padding: 16px 30px; }
+  nav.scrolled { padding: 10px 30px; }
+  section { padding: 80px 30px; }
+  .search-section { padding: 40px 30px; }
+  #about { grid-template-columns: 1fr; gap: 50px; }
+  .about-images { height: 360px; }
+  .destinations-grid { grid-template-columns: repeat(2, 1fr); }
+  .dest-card.featured { grid-column: span 2; }
+  .visa-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .mv-grid { grid-template-columns: 1fr; }
+  .contact-wrapper { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .hero-stats { display: none; }
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(13,27,42,0.98); flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+  .nav-links.open { display: flex; }
+  .hamburger { display: flex; z-index: 1100; }
+  .search-bar { flex-direction: column; }
+  .search-field { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.2); }
+  .search-btn { padding: 18px; }
+  .destinations-grid { grid-template-columns: 1fr; }
+  .dest-card.featured { grid-column: span 1; }
+  .why-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* ── ANIMATIONS ── */
+.reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+</style>
+</head>
+<body>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/23277221951" target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <img src="logo.png" alt="RTASL Logo"/>
+    <div class="nav-logo-text">
+      <span class="name">Reliable Travel Agent</span>
+      <span class="tag">Sierra Leone · RTASL</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#visa">Visa</a></li>
+    <li><a href="#mission">About Us</a></li>
+    <li><a href="#contact" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ &nbsp;Trusted Travel Partner in Sierra Leone&nbsp; ✦</div>
+    <h1 class="hero-title">Explore the World<br/>with <span>Confidence</span></h1>
+    <p class="hero-sub">Reliable Travel Agent Sierra Leone Limited</p>
+    <p class="hero-desc">From employment visas to wildlife safaris, student pathways to luxury getaways — your every journey begins here. We make the world accessible from Freetown.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-primary">Explore Our Services</a>
+      <a href="#contact" class="btn-outline">Get a Free Consultation</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><span class="num">12+</span><span class="label">Years Experience</span></div>
+    <div class="hero-stat"><span class="num">50+</span><span class="label">Destinations</span></div>
+    <div class="hero-stat"><span class="num">5000+</span><span class="label">Happy Travellers</span></div>
+    <div class="hero-stat"><span class="num">98%</span><span class="label">Visa Success Rate</span></div>
+    <div class="hero-stat"><span class="num">24/7</span><span class="label">Support Available</span></div>
+  </div>
+</section>
+
+<!-- SEARCH -->
+<div class="search-section">
+  <p class="search-title">Where Would You Like to <span>Travel?</span></p>
+  <div class="search-bar">
+    <div class="search-field">
+      <i class="fas fa-map-marker-alt"></i>
+      <div class="search-field-inner">
+        <label>Destination</label>
+        <select>
+          <option>Choose Destination</option>
+          <option>Albania, Europe</option>
+          <option>United Kingdom</option>
+          <option>Germany</option>
+          <option>France</option>
+          <option>UAE / Dubai</option>
+          <option>Turkey</option>
+          <option>China</option>
+          <option>USA</option>
+          <option>Canada</option>
+          <option>Australia</option>
+          <option>South Africa</option>
+        </select>
+      </div>
+    </div>
+    <div class="search-field">
+      <i class="fas fa-passport"></i>
+      <div class="search-field-inner">
+        <label>Service Type</label>
+        <select>
+          <option>Select Service</option>
+          <option>Employment Visa</option>
+          <option>Student Visa</option>
+          <option>Tourist Visa</option>
+          <option>Wildlife Safari</option>
+          <option>Adventure Tour</option>
+          <option>Business Visa</option>
+        </select>
+      </div>
+    </div>
+    <div class="search-field">
+      <i class="fas fa-calendar-alt"></i>
+      <div class="search-field-inner">
+        <label>Travel Date</label>
+        <input type="date"/>
+      </div>
+    </div>
+    <div class="search-field">
+      <i class="fas fa-users"></i>
+      <div class="search-field-inner">
+        <label>Travellers</label>
+        <select>
+          <option>1 Person</option>
+          <option>2 Persons</option>
+          <option>3-5 Persons</option>
+          <option>Group (6+)</option>
+        </select>
+      </div>
+    </div>
+    <button class="search-btn" onclick="handleSearch()"><i class="fas fa-search"></i> &nbsp;Search</button>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-images reveal">
+    <img class="about-img-main" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=85" alt="Travel Experience"/>
+    <img class="about-img-accent" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=85" alt="Sierra Leone"/>
+    <div class="about-badge">
+      <span class="big">12+</span>
+      <span class="small">Years of Trust</span>
+    </div>
+  </div>
+  <div class="about-text reveal reveal-delay-2">
+    <div class="section-label">Who We Are</div>
+    <h2 class="section-title">Sierra Leone's Most <span class="text-gold text-italic">Reliable</span> Travel Partner</h2>
+    <p class="section-desc">Reliable Travel Agent Sierra Leone Limited (RTASL) is a premier full-service travel agency headquartered in Freetown. We specialise in transforming travel dreams into seamless realities — whether you're seeking an employment opportunity abroad, a student visa, an unforgettable safari, or a world-class holiday experience.</p>
+    <p class="section-desc" style="margin-top: 14px;">Our team of seasoned travel professionals brings expertise, integrity, and passion to every journey. We are your trusted gateway to the world.</p>
+    <div class="about-points">
+      <div class="about-point">
+        <div class="about-point-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="about-point-text">
+          <h4>Licensed &amp; Certified</h4>
+          <p>Fully registered and compliant with Sierra Leone tourism and travel regulations.</p>
+        </div>
+      </div>
+      <div class="about-point">
+        <div class="about-point-icon"><i class="fas fa-globe-africa"></i></div>
+        <div class="about-point-text">
+          <h4>Global Network</h4>
+          <p>Partnerships with airlines, hotels, embassies and tour operators worldwide.</p>
+        </div>
+      </div>
+      <div class="about-point">
+        <div class="about-point-icon"><i class="fas fa-headset"></i></div>
+        <div class="about-point-text">
+          <h4>24/7 Dedicated Support</h4>
+          <p>Our team is always available before, during, and after your travel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header reveal">
+    <div class="section-label">What We Offer</div>
+    <h2 class="section-title light">Premium Travel <span class="text-gold">Services</span></h2>
+    <p class="section-desc light">Comprehensive travel solutions tailored for Sierra Leoneans looking to explore, work, study, or adventure anywhere in the world.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80" alt="Employment Visa"/>
+        <div class="service-card-img-overlay"></div>
+        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+      </div>
+      <div class="service-card-body">
+        <h3>Employment Visa</h3>
+        <p>Navigate work permit applications with expert guidance. We connect you with legitimate employment opportunities across Europe, Asia, the Gulf and beyond — handling all visa documentation end-to-end.</p>
+        <span class="service-tag">Work Abroad →</span>
+      </div>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Student Visa"/>
+        <div class="service-card-img-overlay"></div>
+        <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+      </div>
+      <div class="service-card-body">
+        <h3>Student Visa</h3>
+        <p>Pursue your academic dreams abroad. We assist with university admissions, student visa applications, accommodation arrangements and pre-departure orientation for students heading to the UK, Europe, Asia and beyond.</p>
+        <span class="service-tag">Study Abroad →</span>
+      </div>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=600&q=80" alt="Wildlife Safari"/>
+        <div class="service-card-img-overlay"></div>
+        <div class="service-icon"><i class="fas fa-paw"></i></div>
+      </div>
+      <div class="service-card-body">
+        <h3>Wildlife Safari &amp; Conservation</h3>
+        <p>Immerse yourself in nature's most spectacular displays. From African safaris to Asia's tiger reserves, we craft responsible, breathtaking wildlife experiences that leave lasting memories and support conservation.</p>
+        <span class="service-tag">Explore Nature →</span>
+      </div>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Adventure Tours"/>
+        <div class="service-card-img-overlay"></div>
+        <div class="service-icon"><i class="fas fa-mountain"></i></div>
+      </div>
+      <div class="service-card-body">
+        <h3>Adventure &amp; Tourist Tours</h3>
+        <p>Trekking, diving, cultural discovery and city exploration — our adventure packages take you off the beaten path. Fully guided, safety-focused and unforgettable experiences for the bold traveller.</p>
+        <span class="service-tag">Adventure Awaits →</span>
+      </div>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80" alt="Flight Booking"/>
+        <div class="service-card-img-overlay"></div>
+        <div class="service-icon"><i class="fas fa-plane"></i></div>
+      </div>
+      <div class="service-card-body">
+        <h3>Flight &amp; Hotel Booking</h3>
+        <p>Get the best fares and accommodation deals worldwide. Our booking experts compare hundreds of options to secure competitive prices for flights, hotels, resorts and villa rentals for all budget levels.</p>
+        <span class="service-tag">Book Flights →</span>
+      </div>
+    </div>
+    <div class="service-card reveal reveal-delay-3">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80" alt="Business Travel"/>
+        <div class="service-card-img-overlay"></div>
+        <div class="service-icon"><i class="fas fa-handshake"></i></div>
+      </div>
+      <div class="service-card-body">
+        <h3>Business &amp; Corporate Travel</h3>
+        <p>Streamlined travel management for corporations and executives. We handle conference travel, business visa applications, airport transfers, and VIP hospitality services for the busy professional.</p>
+        <span class="service-tag">Corporate Solutions →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations">
+  <div class="dest-header reveal">
+    <div class="section-label">Global Reach</div>
+    <h2 class="section-title">Top Travel <span class="text-gold text-italic">Destinations</span></h2>
+    <p class="section-desc">From the golden shores of Albania to the skylines of Asia, we open every door for Sierra Leonean travellers.</p>
+  </div>
+  <div class="destinations-tabs reveal">
+    <button class="dest-tab active">All</button>
+    <button class="dest-tab">Europe</button>
+    <button class="dest-tab">Asia</button>
+    <button class="dest-tab">Americas</button>
+    <button class="dest-tab">Middle East</button>
+    <button class="dest-tab">Africa</button>
+    <button class="dest-tab">Oceania</button>
+  </div>
+  <div class="destinations-grid reveal">
+    <div class="dest-card featured">
+      <img src="https://images.unsplash.com/photo-1543832923-44667a44c804?w=800&q=85" alt="Albania"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-badge">Featured</div>
+      <div class="dest-info">
+        <div class="country">Europe · Balkans</div>
+        <h3>Albania</h3>
+        <div class="details">Pristine Riviera coastline, UNESCO heritage sites, vibrant Tirana and affordable luxury. Albania is Europe's best-kept secret and a top RTASL destination.</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="United Kingdom"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="country">Europe</div>
+        <h3>United Kingdom</h3>
+        <div class="details">Study, work or visit iconic London, Edinburgh and beyond.</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80" alt="Germany"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="country">Europe</div>
+        <h3>Germany</h3>
+        <div class="details">Engineering excellence, culture and top-ranked universities.</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=600&q=80" alt="Dubai"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="country">Middle East</div>
+        <h3>Dubai, UAE</h3>
+        <div class="details">Global city of luxury, business and modern marvels.</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80" alt="Japan"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="country">Asia</div>
+        <h3>Japan</h3>
+        <div class="details">Ancient traditions meet futuristic cities. Tokyo, Kyoto and beyond.</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&q=80" alt="China"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="country">Asia</div>
+        <h3>China</h3>
+        <div class="details">The Great Wall, Shanghai skyline and ancient wonders await.</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80" alt="France"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="country">Europe</div>
+        <h3>France</h3>
+        <div class="details">Romance, art, haute cuisine and the iconic Eiffel Tower.</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=600&q=80" alt="USA"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="country">Americas</div>
+        <h3>United States</h3>
+        <div class="details">New York to LA — study, work, or experience the American dream.</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&q=80" alt="Australia"/>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="country">Oceania</div>
+        <h3>Australia</h3>
+        <div class="details">The land down under — world-class universities and amazing wildlife.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISA -->
+<section id="visa">
+  <div class="visa-grid">
+    <div class="reveal">
+      <div class="section-label">Visa Specialists</div>
+      <h2 class="section-title light">Your Visa. <span class="text-gold text-italic">Our Expertise.</span></h2>
+      <p class="section-desc light">We have one of the highest visa approval rates in Sierra Leone. Our dedicated visa consultants guide you through every step — from document preparation to embassy interviews — ensuring your application is flawless.</p>
+      <div style="margin-top:36px; display:flex; gap:36px; flex-wrap:wrap;">
+        <div style="text-align:center;">
+          <div style="font-family:var(--font-display); font-size:42px; color:var(--gold); font-weight:900;">98%</div>
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:rgba(249,247,242,0.55);">Approval Rate</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:var(--font-display); font-size:42px; color:var(--gold); font-weight:900;">20+</div>
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:rgba(249,247,242,0.55);">Countries Covered</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:var(--font-display); font-size:42px; color:var(--gold); font-weight:900;">Fast</div>
+          <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:rgba(249,247,242,0.55);">Processing Times</div>
+        </div>
+      </div>
+      <div style="margin-top:36px;">
+        <a href="#contact" class="btn-primary">Start Your Visa Application</a>
+      </div>
+    </div>
+    <div class="visa-cards reveal reveal-delay-2">
+      <div class="visa-card">
+        <div class="visa-card-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="visa-card-text">
+          <h4>Employment Visa</h4>
+          <p>Work permit guidance for Europe, Gulf states, Asia and beyond</p>
+        </div>
+        <i class="fas fa-arrow-right visa-card-arrow"></i>
+      </div>
+      <div class="visa-card">
+        <div class="visa-card-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="visa-card-text">
+          <h4>Student Visa</h4>
+          <p>University admissions support and full student visa processing</p>
+        </div>
+        <i class="fas fa-arrow-right visa-card-arrow"></i>
+      </div>
+      <div class="visa-card">
+        <div class="visa-card-icon"><i class="fas fa-umbrella-beach"></i></div>
+        <div class="visa-card-text">
+          <h4>Tourist Visa</h4>
+          <p>Holiday and leisure visa for single and multiple destinations</p>
+        </div>
+        <i class="fas fa-arrow-right visa-card-arrow"></i>
+      </div>
+      <div class="visa-card">
+        <div class="visa-card-icon"><i class="fas fa-building"></i></div>
+        <div class="visa-card-text">
+          <h4>Business Visa</h4>
+          <p>Short-stay business visas for conferences, trade and meetings</p>
+        </div>
+        <i class="fas fa-arrow-right visa-card-arrow"></i>
+      </div>
+      <div class="visa-card">
+        <div class="visa-card-icon"><i class="fas fa-home"></i></div>
+        <div class="visa-card-text">
+          <h4>Family &amp; Dependent Visa</h4>
+          <p>Family reunion, spouse and dependent child visa assistance</p>
+        </div>
+        <i class="fas fa-arrow-right visa-card-arrow"></i>
+      </div>
+      <div class="visa-card">
+        <div class="visa-card-icon"><i class="fas fa-stethoscope"></i></div>
+        <div class="visa-card-text">
+          <h4>Medical Visa</h4>
+          <p>Support for those seeking medical treatment abroad</p>
+        </div>
+        <i class="fas fa-arrow-right visa-card-arrow"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div style="text-align:center;" class="reveal">
+    <div class="section-label" style="justify-content:center;"><span class="section-label" style="justify-content:center;">Why Choose Us</span></div>
+    <h2 class="section-title">The RTASL <span class="text-gold text-italic">Difference</span></h2>
+    <p class="section-desc" style="margin: 16px auto 0; text-align:center;">We're not just a travel agency — we're your trusted partner, every step of the journey.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon"><i class="fas fa-award"></i></div>
+      <h3 class="why-title">Expert Consultants</h3>
+      <p class="why-desc">Our visa and travel experts have years of hands-on experience navigating complex international requirements with precision.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <div class="why-icon"><i class="fas fa-lock"></i></div>
+      <h3 class="why-title">100% Transparent</h3>
+      <p class="why-desc">No hidden fees, no surprises. We operate with complete financial and procedural transparency on every service we provide.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <div class="why-icon"><i class="fas fa-clock"></i></div>
+      <h3 class="why-title">Fast Processing</h3>
+      <p class="why-desc">We work with urgency. Our streamlined processes and embassy connections help ensure your applications move quickly and efficiently.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-3">
+      <div class="why-icon"><i class="fas fa-star"></i></div>
+      <h3 class="why-title">5-Star Service</h3>
+      <p class="why-desc">From your first enquiry to your safe return, our dedicated team delivers exceptional, personalised care at every touchpoint.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon"><i class="fas fa-globe"></i></div>
+      <h3 class="why-title">Global Connections</h3>
+      <p class="why-desc">Our international partnerships with airlines, embassies and hotels open doors that others simply can't access for our clients.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <div class="why-icon"><i class="fas fa-heart"></i></div>
+      <h3 class="why-title">Community Focused</h3>
+      <p class="why-desc">As a Sierra Leonean business, we're deeply invested in enabling our citizens to safely and successfully access global opportunities.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <div class="why-icon"><i class="fas fa-mobile-alt"></i></div>
+      <h3 class="why-title">WhatsApp Support</h3>
+      <p class="why-desc">Reach us instantly via WhatsApp for real-time updates, quick answers and seamless communication throughout your journey.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-3">
+      <div class="why-icon"><i class="fas fa-tags"></i></div>
+      <h3 class="why-title">Best Value Guaranteed</h3>
+      <p class="why-desc">We negotiate the best rates on your behalf. Premium experiences and services at prices that respect your budget.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:24px;" class="reveal">
+    <div>
+      <div class="section-label">Client Stories</div>
+      <h2 class="section-title light">What Our <span class="text-gold text-italic">Travellers</span> Say</h2>
+    </div>
+    <div class="testi-nav">
+      <button class="testi-btn" onclick="scrollTesti(-1)"><i class="fas fa-arrow-left"></i></button>
+      <button class="testi-btn" onclick="scrollTesti(1)"><i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+  <div class="testi-track">
+    <div class="testi-carousel" id="testiCarousel">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"RTASL helped me secure my employment visa for the UAE in record time. Their team was professional, thorough, and held my hand through every step. I'm now working in Dubai thanks to them!"</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://api.dicebear.com/7.x/personas/svg?seed=Mohamed" alt="Mohamed K."/>
+          <div class="testi-author-info">
+            <h5>Mohamed Kamara</h5>
+            <span>Employment Visa Client · Dubai</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I had tried other agencies before and failed. RTASL reviewed my entire application, prepared me for the interview, and I got my UK student visa on the first attempt. Simply the best in Freetown!"</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://api.dicebear.com/7.x/personas/svg?seed=Fatima" alt="Fatima J."/>
+          <div class="testi-author-info">
+            <h5>Fatima Jalloh</h5>
+            <span>Student Visa · United Kingdom</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Our family safari to Kenya was absolutely magical. Every detail was arranged perfectly — flights, lodge, game drives. RTASL made a dream holiday feel effortless. We'll definitely be back for more!"</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://api.dicebear.com/7.x/personas/svg?seed=Ibrahim" alt="Ibrahim S."/>
+          <div class="testi-author-info">
+            <h5>Ibrahim Sesay</h5>
+            <span>Safari Package · Kenya</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Visiting Albania was my best holiday yet. The RTASL team recommended it to me, planned every detail, and I experienced a Europe that most tourists miss. Breathtaking beaches and great food!"</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://api.dicebear.com/7.x/personas/svg?seed=Aminata" alt="Aminata B."/>
+          <div class="testi-author-info">
+            <h5>Aminata Bangura</h5>
+            <span>Tourist Package · Albania</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Reliable by name, reliable by nature. My Schengen visa was processed seamlessly. Their team was always available on WhatsApp to answer my questions. I'm extremely satisfied with their service."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://api.dicebear.com/7.x/personas/svg?seed=Emmanuel" alt="Emmanuel C."/>
+          <div class="testi-author-info">
+            <h5>Emmanuel Conteh</h5>
+            <span>Schengen Visa · Germany</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section id="mission">
+  <div style="text-align:center; max-width:700px; margin:0 auto 10px;" class="reveal">
+    <div class="section-label" style="justify-content:center;">Our Purpose</div>
+    <h2 class="section-title">Mission &amp; <span class="text-gold text-italic">Vision</span></h2>
+  </div>
+  <div class="mv-grid">
+    <div class="mv-card reveal">
+      <div class="mv-card-top"></div>
+      <div class="mv-card-body">
+        <div class="mv-card-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>To be Sierra Leone's most trusted and accessible travel partner — empowering every citizen with the knowledge, documentation, and support they need to safely explore the world. We are committed to delivering exceptional travel experiences, successful visa outcomes, and personalised service that transforms international travel from a daunting process into an exciting journey. We treat every client as a priority, every document as a responsibility, and every destination as a promise kept.</p>
+      </div>
+    </div>
+    <div class="mv-card reveal reveal-delay-2">
+      <div class="mv-card-top"></div>
+      <div class="mv-card-body">
+        <div class="mv-card-icon"><i class="fas fa-eye"></i></div>
+        <h3>Our Vision</h3>
+        <p>To be the leading travel agency across West Africa — recognised for excellence in visa consultancy, travel management, and transformative tourism experiences. We envision a Sierra Leone where every ambitious young professional, student, family, and adventurer can access global opportunities with confidence, dignity, and ease. Through integrity, innovation and partnerships built on trust, RTASL will continue to open the world's doors for Sierra Leoneans — one journey at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="contact-info" style="font-family:var(--font-display); font-size:clamp(28px,4vw,44px); color:var(--white); font-weight:700; line-height:1.2; margin-bottom:16px;">Let's Plan Your<br/><span style="color:var(--gold); font-style:italic;">Perfect Journey</span></h2>
+      <p style="font-size:15px; color:rgba(249,247,242,0.6); line-height:1.9; margin-bottom:36px;">Reach out to our team of travel experts today. Whether you need a visa, a tour package, or just advice — we're always here to help. Every enquiry submitted via the form will be sent directly to our WhatsApp for instant response.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-item-text">
+            <h5>Phone</h5>
+            <a href="tel:+23277221951">+232 77 221 951</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-item-text">
+            <h5>WhatsApp</h5>
+            <a href="https://wa.me/23277221951" target="_blank">+232 77 221 951 — Chat Now</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-item-text">
+            <h5>Email</h5>
+            <a href="mailto:salimamy76@gmail.com">salimamy76@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-item-text">
+            <h5>Office Address</h5>
+            <p>30 Lumley Street, Freetown, Sierra Leone</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-item-text">
+            <h5>Office Hours</h5>
+            <p>Mon – Fri: 8:00am – 6:00pm<br/>Saturday: 9:00am – 4:00pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal reveal-delay-2">
+      <h3>Send an Enquiry</h3>
+      <p class="sub">Your message will be delivered directly to our WhatsApp</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="fname" placeholder="Your full name"/>
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" id="fphone" placeholder="+232 ..."/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="femail" placeholder="your@email.com"/>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Service Needed</label>
+          <select id="fservice">
+            <option value="">Select a service</option>
+            <option>Employment Visa</option>
+            <option>Student Visa</option>
+            <option>Tourist Visa</option>
+            <option>Business Visa</option>
+            <option>Wildlife Safari</option>
+            <option>Adventure Tour</option>
+            <option>Flight Booking</option>
+            <option>Hotel Booking</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Destination</label>
+          <select id="fdestination">
+            <option value="">Select destination</option>
+            <option>Albania</option>
+            <option>United Kingdom</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>Dubai, UAE</option>
+            <option>Turkey</option>
+            <option>China</option>
+            <option>Japan</option>
+            <option>USA</option>
+            <option>Canada</option>
+            <option>Australia</option>
+            <option>South Africa</option>
+            <option>Kenya</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea id="fmessage" placeholder="Tell us about your travel plans, questions or requirements..."></textarea>
+      </div>
+      <p class="form-note"><i class="fab fa-whatsapp"></i> By submitting, your enquiry will be sent directly to our WhatsApp team for immediate attention.</p>
+      <button class="whatsapp-btn" onclick="sendToWhatsApp()">
+        <i class="fab fa-whatsapp" style="font-size:20px;"></i>
+        Send Enquiry via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- MAP EMBED -->
+  <div style="margin: 0 -60px; border-top: 1px solid rgba(201,168,76,0.15);">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.0!2d-13.2317!3d8.4900!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMjknMjQuMCJOIDEzwrAxMycxNS40Ilc!5e0!3m2!1sen!2ssl!4v1000000000000"
+      width="100%" height="340" style="border:0; display:block; filter:grayscale(0.6) contrast(1.1);" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo" style="margin-bottom:18px; display:flex;">
+        <img src="logo.png" alt="RTASL" style="height:48px;"/>
+        <div class="nav-logo-text" style="margin-left:14px;">
+          <span class="name">Reliable Travel Agent SL</span>
+          <span class="tag">RTASL · Freetown</span>
+        </div>
+      </a>
+      <p>Empowering Sierra Leoneans to explore, work, study and adventure across the globe — with expertise, integrity and care.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1c67vQ47XW/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/23277221951" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:salimamy76@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About RTASL</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#visa">Visa Services</a></li>
+        <li><a href="#mission">Mission &amp; Vision</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#services">Employment Visa</a></li>
+        <li><a href="#services">Student Visa</a></li>
+        <li><a href="#services">Tourist Visa</a></li>
+        <li><a href="#services">Wildlife Safari</a></li>
+        <li><a href="#services">Adventure Tours</a></li>
+        <li><a href="#services">Flight &amp; Hotels</a></li>
+      </ul>
+    </div>
+    <div class="footer-newsletter">
+      <h4>Stay Updated</h4>
+      <p>Subscribe to receive travel deals, visa news and destination guides from our team.</p>
+      <div class="newsletter-input">
+        <input type="email" placeholder="Enter your email"/>
+        <button><i class="fas fa-paper-plane"></i></button>
+      </div>
+      <p style="margin-top:24px; font-size:13px; color:rgba(249,247,242,0.55);">
+        <i class="fas fa-map-marker-alt" style="color:var(--gold); margin-right:8px;"></i>30 Lumley Street, Freetown
+      </p>
+      <p style="margin-top:8px; font-size:13px; color:rgba(249,247,242,0.55);">
+        <i class="fas fa-phone" style="color:var(--gold); margin-right:8px;"></i>+232 77 221 951
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Reliable Travel Agent Sierra Leone Limited · RTASL. All rights reserved.</p>
+    <p>Built with passion in Freetown, Sierra Leone</p>
+  </div>
+</footer>
+
+<script>
+// NAV SCROLL
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// HAMBURGER
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+  document.getElementById('navLinks').classList.remove('open');
+}));
+
+// SCROLL REVEAL
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.12 });
+revealEls.forEach(el => observer.observe(el));
+
+// TESTIMONIAL CAROUSEL
+let testiPos = 0;
+function scrollTesti(dir) {
+  const carousel = document.getElementById('testiCarousel');
+  const card = carousel.querySelector('.testi-card');
+  const cardWidth = card.offsetWidth + 28;
+  const maxPos = carousel.scrollWidth - carousel.parentElement.offsetWidth;
+  testiPos = Math.max(0, Math.min(testiPos + dir * cardWidth, maxPos));
+  carousel.style.transform = `translateX(-${testiPos}px)`;
+  carousel.style.transition = 'transform 0.5s cubic-bezier(0.4,0,0.2,1)';
+}
+
+// DESTINATION TABS
+document.querySelectorAll('.dest-tab').forEach(tab => {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('.dest-tab').forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// SEARCH
+function handleSearch() {
+  const dest = document.querySelector('.search-field select').value;
+  if(!dest || dest === 'Choose Destination') {
+    alert('Please select a destination to search.');
+    return;
+  }
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}
+
+// WHATSAPP FORM SUBMIT
+function sendToWhatsApp() {
+  const name = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  const email = document.getElementById('femail').value.trim();
+  const service = document.getElementById('fservice').value;
+  const dest = document.getElementById('fdestination').value;
+  const message = document.getElementById('fmessage').value.trim();
+
+  if(!name) { alert('Please enter your name.'); return; }
+  if(!phone && !email) { alert('Please enter your phone number or email.'); return; }
+
+  const text = `*New Enquiry – RTASL Website*\n\n` +
+    `👤 *Name:* ${name}\n` +
+    `📞 *Phone:* ${phone || 'N/A'}\n` +
+    `📧 *Email:* ${email || 'N/A'}\n` +
+    `✈️ *Service:* ${service || 'N/A'}\n` +
+    `🌍 *Destination:* ${dest || 'N/A'}\n` +
+    `💬 *Message:* ${message || 'No message provided'}\n\n` +
+    `_Sent from rtasl.com_`;
+
+  const encoded = encodeURIComponent(text);
+  window.open(`https://wa.me/23277221951?text=${encoded}`, '_blank');
+}
+
+// SMOOTH COUNTER ANIMATION
+function animateCounters() {
+  document.querySelectorAll('.hero-stat .num').forEach(el => {
+    const target = el.textContent;
+    const num = parseInt(target);
+    if(isNaN(num)) return;
+    let start = 0;
+    const step = num / 60;
+    const timer = setInterval(() => {
+      start += step;
+      if(start >= num) { el.textContent = target; clearInterval(timer); return; }
+      el.textContent = Math.floor(start) + (target.includes('+') ? '+' : target.includes('%') ? '%' : '');
+    }, 25);
+  });
+}
+setTimeout(animateCounters, 800);
+</script>
+</body>
+</html>
